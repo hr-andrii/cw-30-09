@@ -6,17 +6,18 @@
     font-family: 'Cabin', sans-serif;
     scroll-behavior: smooth;
 }
-body{
+
+body {
     max-width: 980px;
     margin: auto;
 }
+
 header nav .logo {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 3rem;
     text-align: center;
     color: var(--accent-color);
     margin-top: 10px;
-
 }
 
 header nav .menu {
@@ -37,60 +38,67 @@ header nav .menu a {
 header nav .menu a:hover {
     border: 1px solid var(--accent-color);
 }
-@media (min-width: 550px){
-    header nav{
+
+@media (min-width: 550px) {
+    header nav {
         display: flex;
         align-items: center;
     }
-    header nav .menu{
+
+    header nav .menu {
         flex: 1;
     }
 }
-header .banner{
-    background-image: url(../img/tesla.jpg);
-    min-height: 500px;
+
+header .banner {
+    background-image: url(../img/tesla-model-x-black.jpg);
+    background-size: cover;
     background-position: center;
     min-height: 500px;
     display: flex;
     align-items: center;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
 }
-header .banner h1{
+
+header .banner h1 {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 3rem;
-    color: white;
+    color: var(--accent-color);
 }
+
+
 article.product img {
     display: block;
     width: 100%;
 }
+
 article.product .product-buttons {
     display: flex;
     justify-content: space-around;
 }
-@media (min-width: 640px)
-{
-    .product-list{
+
+@media (min-width: 640px) {
+    .product-list {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 5px;
     }
 }
-@media (min-width: 960px)
-{
-    .product-list{
+
+@media (min-width: 960px) {
+    .product-list {
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 5px;
     }
 }
-@media (min-width: 980px)
-{
-    .product-list{
+
+@media (min-width: 980px) {
+    .product-list {
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: 5px;
     }
 }
+
+
 .button {
     display: inline-block;
     padding: 0.35em 1.2em;
@@ -102,7 +110,7 @@ article.product .product-buttons {
     font-weight: 300;
     color: #FFFFFF;
     text-align: center;
-    transition: all 0.2s;
+    transition: all 0.3s;
     background-color: transparent;
 }
 
@@ -127,4 +135,3 @@ article.product .product-buttons {
         margin: 0.4em auto;
     }
 }
-
